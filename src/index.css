@@ -11,3 +11,138 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.student-list-container {
+  border: 2px solid #909090;
+  margin-top: 100px;
+  height: 800px;
+  width: 1000px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  border-radius: 2%;
+  position:relative;
+}
+
+.main-menu-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.student-details-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  padding: 20px
+}
+
+.student-avatar {
+  height: 150px;
+  width: 150px;
+  border-width: 2px;
+  border: .2px solid #DCDCDC;
+  border-radius: 50%;
+  margin: 20px 50px 0 20px
+}
+
+.student-details-inner {
+  padding-left: 40px;
+}
+
+.student-name {
+  font-size: 50px;
+  margin: 10px;
+  font-weight: bold;
+}
+
+.student-container {
+  border: solid #A8A8A8;
+  border-width: 1px 0 1px 0;
+}
+
+input {
+  border-top-style: hidden;
+  border-right-style: hidden;
+  border-left-style: hidden;
+  border-bottom-style: hidden;
+  font-size: 30px;
+  padding: 20px 0 0 10px;
+}
+.name-input {
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  width: 100%
+}
+
+.name-input:focus {
+  outline: none;
+}
+.add-tag-input {
+  padding: 0;
+  width: 200px;
+  border-bottom-style: solid;
+  border-bottom-color: gray;
+  border-bottom-width: 2px;
+}
+.tag-input:focus {
+  outline: none;
+}
+
+.expand-btn-container {
+  float: right;
+  position:absolute;
+  right: 0;
+  padding-right: 10px;
+}
+
+.expand-btn {
+  padding: 0;
+  border: none;
+  background: none;
+  outline: none;
+  justify-content: flex-end;
+  text-align: center;
+}
+
+.expand-btn-toggle {
+  font-size: 50px;
+  margin-right: 20px;
+  margin-top: 0;
+  margin-bottom: 0;
+  color: #A8A8A8;
+}
+
+.expand-btn-toggle:hover {
+  color: black;
+  cursor: pointer;
+}
+
+.test-scores {
+  margin: 0 0 10px 0;
+}
+
+.tags-section {
+  display: flex;
+  height: 50px;
+  width: 50px;
+  flex-direction: row;
+  padding: 5px;
+}
+
+.tag {
+  display: flex;
+  height: 30px;
+  width: 100px;
+  background-color: gray;
+  text-align: center;
+  margin-right: 10px;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  border-radius: 10%;
+  color: white;
+}
+
+.empty-student-list {
+  text-align: center;
+}
